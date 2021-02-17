@@ -10,6 +10,7 @@ describe("Game5", function() {
 
     await game.win();
 
+    // leave this assertion as-is
     assert(await game.isWon(), "You did not win the game");
   });
 });

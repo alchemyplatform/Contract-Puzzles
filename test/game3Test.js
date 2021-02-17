@@ -21,6 +21,7 @@ describe("Game3", function() {
     // TODO: win expects three arguments
     await game.win();
 
+    // leave this assertion as-is
     assert(await game.isWon(), "You did not win the game");
   });
 });
