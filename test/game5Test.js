@@ -6,11 +6,9 @@ describe("Game5", function() {
     const game = await Game.deploy();
     await game.deployed();
 
-    const account1 = ethers.provider.getSigner(0);
-    const account2 = ethers.provider.getSigner(1);
+    // good luck
 
-    await game.write(await account2.getAddress());
-    await game.connect(account2).win(await account1.getAddress());
+    await game.win();
 
     assert(await game.isWon(), "You did not win the game");
   });

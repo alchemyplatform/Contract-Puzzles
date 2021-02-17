@@ -6,7 +6,8 @@ describe("Game1", function() {
     const game = await Game.deploy();
     await game.deployed();
 
-    await game.unlock();
+    // you must call unlock before you can win
+
     await game.win();
 
     assert(await game.isWon(), "You did not win the game");
