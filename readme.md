@@ -14,7 +14,7 @@ At the same time, you're more than welcome to use `console.log` from hardhat if 
 
 ### Running the tests
 
-You can run all tests at once by running `npx hardhat test`. However, this might be frustrating when you are just trying to test an individual game.
+First, install all the dependencies with `npm i`. Then, you can run all tests at once by running `npx hardhat test`. However, this might be frustrating when you are just trying to test an individual game.
 
 If you are working on `Game1`, for instance, it will make more sense to run the test cases for the first game: `npx hardhat test test/game1Test.js`. Each Game contract will have a corresponding test file.
 
