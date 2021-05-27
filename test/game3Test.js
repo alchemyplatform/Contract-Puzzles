@@ -16,7 +16,7 @@ describe("Game3", function() {
     const address = await signer.getAddress();
 
     // to call a contract as a signer you can use contract.connect
-    await contract.connect(signer).buy({ value: "1" });
+    await game.connect(signer).buy({ value: "1" });
 
     // TODO: win expects three arguments
     await game.win();
