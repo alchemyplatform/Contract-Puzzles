@@ -1,5 +1,5 @@
-//SPDX-License-Identifier: Unlicense
-pragma solidity ^0.7.0;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.17;
 
 contract Game3 {
   bool public isWon;
