@@ -13,12 +13,10 @@ describe('Game1', function () {
     // leave this as-is
     const { game } = await loadFixture(deployContractAndSetVariables);
 
-    // you must call unlock before you can win
+    await game.unlock()
 
-    // leave this call to game.win() as-is
     await game.win();
 
-    // leave this testing assertion as-is
     assert(await game.isWon(), 'You did not win the game');
   });
 });
