@@ -14,6 +14,7 @@ describe('Game1', function () {
     const { game } = await loadFixture(deployContractAndSetVariables);
 
     // you must call unlock before you can win
+    await game.unlock();
 
     // leave this call to game.win() as-is
     await game.win();
